@@ -25,7 +25,7 @@ def init_db() -> None:
         conn.commit()
 
 
-def sace_audit(question : str, result: dict) -> None:
+def save_audit(question : str, result: dict) -> None:
     path = get_settings().database_file
     with sqlite3.connect(path) as conn:
         conn.execute(

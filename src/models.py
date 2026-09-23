@@ -21,7 +21,7 @@ class ChatResponse(BaseModel):
     support_status: str = ""
     usefulness: str = ""
     sources: List[SourceItem] = []
-    trace = List[str] = []
+    trace : List[str] = []
     thread_id: str
     memory_turns: int = 0
 
